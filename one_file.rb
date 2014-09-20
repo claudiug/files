@@ -58,7 +58,7 @@ end
 
 ##CREATE levels
 Level.delete_all
-10.times do |t|
+50.times do |t|
   Level.create!(
       title: Faker::Name.first_name,
       description: Faker::Lorem.sentence,
@@ -68,7 +68,7 @@ end
 
 ##CREATE lessons
 Lesson.delete_all
-10.times do |t|
+100.times do |t|
   Lesson.create!(
      name: Faker::Name.last_name,
      description: Faker::Lorem.sentence,
@@ -78,7 +78,7 @@ Lesson.delete_all
 end
 
 Question.delete_all
-100.times do |t|
+300.times do |t|
   Question.create!(
       title: Faker::Name.last_name,
       response: Faker::Name.first_name,
